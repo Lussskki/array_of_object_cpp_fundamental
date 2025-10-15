@@ -10,7 +10,11 @@ public:
 	float programming_grade;
 
 	Student()
-	{ }
+	{
+		age = 0;
+		gender = 'U';  // for unknown
+		programming_grade = 0.0;
+	}
 
 	Student(string name, int age, char gender, float programming_grade)
 	{
@@ -23,7 +27,7 @@ public:
 
 int main()
 {
-	/*int lucky_numbers[5] = { 1,2,3,4,5 };*/
+	
 	Student  students[3];
 
 	for (int i = 0; i < 3; i++)
